@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function Navbar() {
+export default function Navbar({ handleLogout }) {
     // **PLANS**
     // destructure user as a prop to utilize and conditionally render navbar components
 
