@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from '../../components/Navbar/Navbar'
 import { Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
+import Landing from '../Landing/Landing';
 
 function App() {
   const [characters, setCharacters] = useState(null)
@@ -17,10 +18,13 @@ function App() {
   return (
     <>
       {/* pass user as props to navbar */}
-      <Navbar handleLogout={handleLogout} /> 
+      <Navbar handleLogout={handleLogout} />
 
       {/* ROUTES  */}
       <Routes>
+        {/* LANDING PAGE */}
+        <Route path='/' element={<Landing />} />
+
         {/* LOGIN/SIGNUP  */}
 
         {/* PROFILE  */}
